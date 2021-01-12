@@ -1,0 +1,70 @@
+1. node.js & yarn 설치 후
+
+C:\Users\test_pc>cd C:\React FireBase
+
+C:\React FireBase>yarn init
+yarn init v1.22.10
+question name (React FireBase): wordcloud
+question version (1.0.0):
+question description:
+question entry point (index.js):
+question repository url:
+question author:
+question license (MIT):
+question private:
+success Saved package.json
+Done in 36.91s.
+
+2. 리액트 및 리액트 돔 설치
+C:\React FireBase>yarn add react react-dom
+yarn add v1.22.10
+info No lockfile found.
+[1/4] Resolving packages...
+[2/4] Fetching packages...
+[3/4] Linking dependencies...
+[4/4] Building fresh packages...
+
+success Saved lockfile.
+success Saved 4 new dependencies.
+info Direct dependencies
+├─ react-dom@17.0.1
+└─ react@17.0.1
+info All dependencies
+├─ js-tokens@4.0.0
+├─ react-dom@17.0.1
+├─ react@17.0.1
+└─ scheduler@0.20.1
+Done in 1.12s.
+
+3. 웹 팩 설치
+C:\React FireBase>yarn add --dev webpack webpack-dev-server
+1.22.10
+
+C:\React FireBase>yarn add --dev babel-core babel-loader babel-preset-react-app
+1.22.10
+
+C:\React FireBase>yarn add --dev webpack-cli
+
+
+4. 웹 팩 버전 충돌 에러 해결
+npm uninstall webpack -g
+npm uninstall -g webpack-dev-server
+npm install webpack@3.8.0 --save-dev 
+npm install webpack-dev-server@2.9.7 --save-dev
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
