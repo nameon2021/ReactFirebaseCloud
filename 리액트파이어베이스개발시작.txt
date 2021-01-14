@@ -73,19 +73,38 @@ To https://github.com/nameon2021/WordCloud.git
 Branch 'master' set up to track remote branch 'master' from 'origin'.
 
 
+6. 파이어베이스 호스팅 빌드
+C:\React FireBase>yarn add --dev copy-webpack-plugin
+
+C:\React FireBase>yarn add firebase-tools
+
+C:\React FireBase>yarn build
+
+C:\React FireBase>npm install copy-webpack-plugin --save-dev
+파이어베이스 계정설정
+C:\React FireBase>firebase login
+C:\React FireBase>firebase logout
+
+C:\React FireBase>firebase init
+호스팅 선택 - wordcloud
+
+=== Hosting Setup
+
+Your public directory is the folder (relative to your project directory) that
+will contain Hosting assets to be uploaded with firebase deploy. If you
+have a build process for your assets, use your build's output directory.
+
+? What do you want to use as your public directory? public
+? Configure as a single-page app (rewrite all urls to /index.html)? No
+? Set up automatic builds and deploys with GitHub? No
++  Wrote public/404.html
+? File public/index.html already exists. Overwrite? No
+i  Skipping write of public/index.html
+
+C:\React FireBase>firebase deploy
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+****************버전업데이트 yarn build 및 npm start 오류 난다면
+npm install -g npm-check-updates
+ncu -u 
+npm install
