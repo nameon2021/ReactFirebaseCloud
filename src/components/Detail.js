@@ -2,15 +2,19 @@ import React from 'react';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 
-class Home extends React.Component {
+class Detail extends React.Component {
+    constructor(props) {
+        super(props);
+    }
     render() {
         return (
             <Card>
                 <CardContent>
-                    오키연구소 리액트 자바스크립트 프레임워크 웹앱 시스템 연구중  - 김남언 연구원
+                    {this.props.match.params.textID}
                 </CardContent>
             </Card>
         );
     }
 }
-export default Home;
+
+export default Detail;
