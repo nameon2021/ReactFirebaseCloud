@@ -7,7 +7,7 @@ class Home extends React.Component {
         return (
             <Card>
                 <CardContent>
-                    오키연구소 리액트 자바스크립트 프레임워크 웹앱 시스템 연구중  - 김남언 연구원
+                    리액트 자바스크립트 프레임워크 웹앱 시스템 연구중  - 김남언 연구원
                 </CardContent>
             </Card>
         );
